@@ -1,0 +1,243 @@
+body {
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #eee;
+    padding: 1em;
+    text-align: right;
+    position: relative;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+#schoolLogo {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    margin-right: 20px;
+}
+
+figcaption div {
+    width: 100%;
+}
+
+figcaption p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+figcaption {
+    margin-left: 20px;
+}
+#schoolLogo,
+#characteristicLogo,
+#facilitiesLogo {
+    max-width: 100%;
+    height: 151px;
+    width: 151px;
+    margin-right: 20px;
+}
+
+#characteristic p {
+    transition: color 0.3s ease-in-out;
+}
+
+#professors {
+    margin-top: 20px;
+}
+
+.professor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prof-info {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+}
+
+.prof-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.professor img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.professor .info {
+    max-width: 400px;
+    padding-right: 10%;
+}
+
+.professor h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.professor p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#characteristic p:hover,
+#programs p:hover,
+#facilities p:hover{
+    color: darkgreen;
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+#characteristic p.clicked,
+#programs p.clicked,
+#facilities p.clicked{
+    color: darkgreen;
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+/* 기본 스타일 */
+
+/* 모바일 화면에서의 스타일 화면 폭이 768 이하 일 경우*/
+@media (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+
+    header {
+        padding: 0.5em;
+        font-size: 12px;
+    }
+
+    nav {
+        padding: 0em;
+    }
+
+    #menu-icon {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        color: #333;
+
+    }
+
+    nav ul {
+        padding:1em;
+        text-align: center;
+        display: none;
+        position: absolute;
+        top: 5em;
+        right: 1em;
+        background-color: #eee;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    /* 드롭다운 아이콘 스타일 */
+    #menu-icon {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+    section {
+        padding: 1em;
+    }
+    
+    footer {
+        padding: 5px;
+    }
+    
+    figure {
+        flex-direction: column;
+        text-align: center;
+    }
+    #characteristicLogo,
+    #schoolLogo,
+    #programsLogo,
+    #facilitiesLogo {
+        width: 50%;
+        margin-right: 0;
+        height: 50%;
+    }
+    
+    figcaption {
+        margin-left: 0;
+    }
+    
+    .prof-info {
+        flex: 0 0 100%;
+    }
+    
+    .professor img {
+        width:50%;
+        margin-right: 0;
+        height:auto;
+    }
+}
+

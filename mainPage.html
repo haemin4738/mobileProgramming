@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <title>2019136108_이해민</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="pageTitle">한국기술교육대학교 - 컴퓨터공학부</h1>
+    </header>
+
+    <nav>
+        <div id="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="#content">학교 소개</a></li>
+            <li><a href="#characteristic">교육 특성</a></li>
+            <li><a href="#professors">교수님 소개</a></li>
+            <li><a href="#research">연구원 소개</a></li>
+            <li><a href="#programs">전공 프로그램</a></li>
+            <li><a href="#facilities">시설</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        <h2>학교 소개</h2>
+        <figure>
+            <img src="img/school_Logo.jpg" alt="한국기술교육대학교 로고" id="schoolLogo">
+            <figcaption>
+                <div>
+                    <p>
+                        <strong>심볼 :</strong> 한국기술교육대학교의 방패형 심볼마크는 최고학문기관으로서 권위와 전통성을 상징한다.
+                    </p>
+                    <p>
+                        <strong>교육이념 :</strong> 실사구시 [實事求是] - 실사구시의 정신에 따라 학문과 기술을 연구하고 가르침으로써 인류문화의 번영에 이바지 함
+                    </p>
+                    <p>
+                        <strong>교육목적 :</strong> 창의적 사고와 능동적 실천능력 배양 - 창의적 사고와 능동적 실천능력을 배양함으로써 자아를 실현하고 국가발전 및 인류번영에 기여함
+                    </p>
+                    <p>
+                        <strong>교육목표 :</strong> 인간을 기본 가치로 두고 창의적 사고와 도전 정신으로 현실문제를 해결하고자 하는 다산 정약용과 담헌 홍대용의 실사구시 철학을
+                        실천하는 인재의 양성
+                    </p>
+                </div>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section id="characteristic">
+        <h2>교육 특성</h2>
+        <figure>
+            <img src="img/characteristic/img1.jpg" alt="특성 로고" id="characteristicLogo">
+            <figcaption>
+                <div id="paragraphContainer">
+                    <p onclick="changeImage('img1.jpg')">한국기술교육대학교는 창조적인 실천기술을 겸비한 직업능력개발훈련교사, 인력개발담당자 및 고도지식산업이 요구하는
+                        실천공학기술자 양성을 위해 산업계 및 사회적 요구사항을 반영하여
+                        학부별 특성에 맞게 교육과정을 편성하고 있으며, 현장중심의 실험·실습을 강화한 특성화된 교육과정을 운영하고 있습니다.</p>
+                    <p onclick="changeImage('img2.jpg')">교육과정은 기초소양, HRD, MSC, 전공으로 구분하고, 과정별 특성에 따라 이수해야 하는 세부 교과영역으로
+                        편성하고 있으며, 졸업요건으로 공학계열은 150학점제,
+                        경영계열은 140학점제로 운영하고 있습니다.</p>
+                    <p onclick="changeImage('img3.jpg')">급격히 변화하는 산업기술 환경에 대처할 수 있도록 깊이 있는 전문이론과 실기 및 실험을 통한 현장중심의 공학교육을
+                        강화, 실험·실습이 포함된 전공교과목이 50%이상이 되도록
+                        특성화된 전공 교육과정을 운영하고 있습니다.</p>
+                    <p onclick="changeImage('img4.jpg')">인간과 사회, 그리고 자연에 대한 깊이 있는 이해를 바탕으로한 사고력과 탐구능력 함양, 공학과 경영 분야의
+                        전문직업인으로서 핵심기술을 연마하기 위해 필요한 기초수리정보 능력
+                        함양을 위한 교양 교육과정을 운영하고 있습니다.</p>
+                    <p onclick="changeImage('img5.jpg')">아울러, 실천공학기술자, 직업능력개발훈련교사, 인력개발담당자로서 갖추어야 할 자질과 능력을 개발하는데 필요한
+                        HRD 교육과정을 운영하고 있으며, HRD 부전공 이수를 의무화
+                        하여 졸업시 직업능력개발훈련교사 면허 자격을 부여하고 있습니다.</p>
+                </div>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section id="professors">
+        <h2>교수님 소개</h2>
+
+        <div class="professor">
+            <div class="prof-info">
+                <img src="img/professor/professor1.jpg" alt="교수님 1">
+                <div class="info">
+                    <h3>문일영 교수님</h3>
+                    <p>Email : iymoon@koreatech.ac.kr</p>
+                    <p>전공분야 : 모바일 프로그래밍, 무선 인터넷, 모바일 IP</p>
+                    <p>연구실 : 2공학관 237호</p>
+                </div>
+            </div>
+
+            <div class="prof-info">
+                <img src="img/professor/professor2.jpg" alt="교수님 2">
+                <div class="info">
+                    <h3>김상연 교수님</h3>
+                    <p>Email : sykim@koreatech.ac.kr</p>
+                    <p>전공분야 : 가상/증강현실, 임베디드시스템, 햅틱스</p>
+                    <p>연구실 : 2공학관 424호</p>
+                </div>
+            </div>
+            <div class="prof-info">
+                <img src="img/professor/professor3.jpg" alt="교수님 3">
+                <div class="info">
+                    <h3>김은경 교수님</h3>
+                    <p>Email : egkim@koreatech.ac.kr</p>
+                    <p>전공분야 : 인공지능, 시맨틱웹</p>
+                    <p>연구실 : 2공학관 323호</p>
+                </div>
+            </div>
+
+            <div class="prof-info">
+                <img src="img/professor/professor4.jpg" alt="교수님 4">
+                <div class="info">
+                    <h3>최영규 교수님</h3>
+                    <p>Email : ykchoi@koreatech.ac.kr</p>
+                    <p>전공분야 : 컴퓨터 비젼, 그래픽스</p>
+                    <p>연구실 : 2공학관 320호</p>
+                </div>
+            </div>
+
+            <div class="prof-info">
+                <img src="img/professor/professor5.jpg" alt="교수님 5">
+                <div class="info">
+                    <h3>장경식 교수님</h3>
+                    <p>Email : ksjang@koreatech.ac.kr</p>
+                    <p>전공분야 : 임베디드시스템, VLSI CAD</p>
+                    <p>연구실 : 2공학관 234호</p>
+                </div>
+            </div>
+
+            <div class="prof-info">
+                <img src="img/professor/professor6.jpg" alt="교수님 6">
+                <div class="info">
+                    <h3>김상진 교수님</h3>
+                    <p>Email : sangjin@koreatech.ac.kr</p>
+                    <p>전공분야 : 암호기술응용</p>
+                    <p>연구실 : 2공학관 239호</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>연구원 소개</h2>
+        <div class="professor">
+            <div class="prof-info">
+                <img src="img/professor/researcher1.jpg" alt="교수님 1">
+                <div class="info">
+                    <h3>박진우 책임기술연구원님</h3>
+                    <p>Email : jwpark@koreatech.ac.kr</p>
+                    <p>전공분야 : 전자상거래, XML, Web, Linux Server, APP</p>
+                    <p>연구실 : 2공학관 405호</p>
+                </div>
+            </div>
+
+            <div class="prof-info">
+                <img src="img/professor/researcher2.jpg" alt="교수님 2">
+                <div class="info">
+                    <h3>심준민 책임기술연구원님</h3>
+                    <p>Email : sjm@koreatech.ac.kr</p>
+                    <p>전공분야 : - </p>
+                    <p>연구실 : 2공학관 122호</p>
+                </div>
+            </div>
+            <div class="prof-info">
+                <img src="img/professor/researcher3.jpg" alt="교수님 3">
+                <div class="info">
+                    <h3>황현서 책임기술연구원님</h3>
+                    <p>Email : smilebear1@koreatech.ac.kr</p>
+                    <p>전공분야 : - </p>
+                    <p>연구실 : 2공학관 406호</p>
+                </div>
+            </div>
+
+            <div class="prof-info">
+                <img src="img/professor/researcher4.jpg" alt="교수님 4">
+                <div class="info">
+                    <h3>강봉숙 행정직원님</h3>
+                    <p>Email : oabboabb@koreatech.ac.kr</p>
+                    <p>전공분야 : - </p>
+                    <p>연구실 : 2공학관 232호</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="programs">
+        <h2>전공 프로그램</h2>
+        <figure>
+            <img src="img/programs/img1.jpg" alt="프로그램 로고" id="programsLogo">
+            <figcaption>
+                <div id="paragraphContainer">
+                    <p onclick="prochangeImage('img/programs/img1.jpg')"><strong>스마트IoT 트랙 : </strong>기본적인 소프트웨어 지식을 갖춘
+                        사물 인터넷 개발 전문가를 양성한다. 이를 위해 IoT 개론 및 기초설계 등과 같은 기초과목을 학습하고, IoT 네트워크 및 플랫폼, IoT 임베디드 시스템과 같은 핵심
+                        요소 기술과 IoT 응용 및 서비스, 지능형 IoT 응용 등과 같은 응용 분야를 심층 학습한다.</p>
+                    <p onclick="prochangeImage('img/programs/img2.jpg')"><strong>소프트웨어 트랙 : </strong>기본적인 하드웨어 지식을 갖춘
+                        소프트웨어 개발 전문가를 양성한다. 이를 위해 데이터베이스, 소프트웨어공학, 컴파일러 등과 같은전통 전산학 교육을 포함하여 기계학습, 인공지능, 웹서비스, 정보보호 등과
+                        같은 응용 분야를 심층 학습한다.</p>
+                    <p onclick="prochangeImage('img/programs/img3.jpg')"><strong>AI 트랙 : </strong>현대적인 인공지능 기술 이해하고 활용할
+                        수 있는 전문가를 양성한다. 이를 위해 인공지능 기초 및 기계학습 등과 같은 인공지능 기초 과목을 포함하여, 컴퓨터비전, 자연어처리, 데이터마이닝, 빅데이터처리 등과 같은
+                        응용 분야를 심층 학습한다.</p>
+                </div>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section id="facilities">
+        <h2>시설</h2>
+        <figure>
+            <img src="img/facilities/img1.jpg" alt="시설 및 교육환경 로고" id="facilitiesLogo">
+            <figcaption>
+                <div id="paragraphContainer">
+                    <p onclick="facchangeImage('img/facilities/img1.jpg')"><strong>다산정보관 :</strong> 주요시설로는 소강당 기능의 다산홀을
+                        비롯하여 전자정보실, 시청각실, 미디어실, 696석을 갖춘 3개의 열람실 및 9개의 스터디룸, 대출실, 참고열람실 등 최상의 학술정보서비스를 제공할 수 있는 시설을 갖추고
+                        있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img2.jpg')"><strong>담헌실학관 :</strong> 다양한 행사진행이 가능한
+                        담헌홀(1,200명 수용)이 있으며, 일학습병행대학, 교육성과인증센터, 다담창의센터, 교양교육 센터, 교수학습센터, 공학교육혁신센터, 공동훈련센터, 대학혁신사업단 등이
+                        위치해 있다. 이 외에도 계단식강의실, 세미나실, 전산실습실, 물리실험실 등의 시설을 갖추고 있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img3.jpg')"><strong>공학 2관 :</strong> 컴퓨터공학부, 디자인·건축공학부에서
+                        사용하고 있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img4.jpg')"><strong>인문경영관 :</strong> 산업경영학부, 교양학부,
+                        HRD학과, 융합학과, 고용서비스정책학과에서 사용하고 있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img5.jpg')"><strong>국제교육센터(GEC) :</strong> 학생들의 어학능력향상 및
+                        외국인학생들의 중심시설로 사용하고 있으며, 주요시설로는 글로벌라운지, 어학LAB실, 소그룹실, 교수실, 다목적강의실 등이 있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img6.jpg')"><strong>학생회관 :</strong> 학생회관의 주요시설은 학생
+                        편의시설(미용실, 동아리실, 학보사, 방송국, 복사실 등)과 구내식당(학생식당, 전골식당, 아우내참)이 있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img7.jpg')"><strong>학생통합지원센터 :</strong> 주요시설로는 학생종합지원센터,
+                        IPP센터, 상담진로개발센터, 우체국, 은행, 세미나실, 원형강의실, 보건소 등이 있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img8.jpg')"><strong>복지관 :</strong> 현재 주요시설로는 매점, 커피전문점,
+                        교직원식당, 교수라운지, 그리고 소규모 강연(공연)을 위한 소극장(144명 수용) 등이 있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img9.jpg')"><strong>체육관 :</strong> 학생들의 체육활동 및 체력증진을 위하여
+                        운동장 옆 구 노천극장 부지에 체육관 전용건물을 신축 준공하였으며, 주요시설로는 농구코트 1면(객석 400석), 스쿼시장 2면, 헬스장, 운동실습실 및 강의실 등이 설치되어
+                        있다.</p>
+                    <p onclick="facchangeImage('img/facilities/img10.jpg')"><strong>기숙사 :</strong> 해울관(A동), 예지관(B동), 함지관(C동), 다솔관(D동), 한울관(E동), 참빛관, 청솔관(G동), IH(H동), 예솔관(BTL), 은솔관, 솔빛관으로 총 11개의 기숙사가 있다. 총 2723명 까지 수용이 가능하며, 2인실(1,450)실로 남자 1,036실 / 여자 414실로 나누어진다.</p>
+                </div>
+            </figcaption>
+        </figure>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 한국기술교육대학교. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
